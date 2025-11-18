@@ -13,6 +13,19 @@ export default {
         mona: ['Mona Sans', 'system-ui', 'sans-serif'],
         'ibm-plex': ['IBM Plex Sans', 'system-ui', 'sans-serif'],
         manrope: ['Manrope', 'system-ui', 'sans-serif'],
+        abril: ['"Abril Fatface"', 'serif'],
+      },
+      colors: {
+        background: 'hsl(var(--background) / <alpha-value>)',
+        foreground: 'hsl(var(--foreground) / <alpha-value>)',
+        primary: 'hsl(var(--primary) / <alpha-value>)',
+        'primary-foreground': 'hsl(var(--primary-foreground) / <alpha-value>)',
+        secondary: 'hsl(var(--secondary) / <alpha-value>)',
+        'secondary-foreground': 'hsl(var(--secondary-foreground) / <alpha-value>)',
+        accent: 'hsl(var(--accent) / <alpha-value>)',
+        'accent-foreground': 'hsl(var(--accent-foreground) / <alpha-value>)',
+        muted: 'hsl(var(--muted) / <alpha-value>)',
+        'muted-foreground': 'hsl(var(--muted-foreground) / <alpha-value>)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
@@ -21,6 +34,7 @@ export default {
         'slide-up': 'slideUp 0.3s ease-out',
         'bounce-in': 'bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
         'spin-slow': 'spin 3s linear infinite',
+        blob: 'blob 14s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -44,6 +58,12 @@ export default {
           '50%': { transform: 'scale(1.05)' },
           '70%': { transform: 'scale(0.9)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        blob: {
+          '0%': { transform: 'translate(0px, 0px) scale(1)' },
+          '33%': { transform: 'translate(20px, -30px) scale(1.05)' },
+          '66%': { transform: 'translate(-25px, 15px) scale(0.97)' },
+          '100%': { transform: 'translate(0px, 0px) scale(1)' },
         },
       },
     },

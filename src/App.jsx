@@ -1,10 +1,10 @@
 import React from 'react'
-import HeroSandwich from './components/HeroSandwich'
+import HeroEditorial from './components/HeroEditorial'
 
 function App() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <HeroSandwich />
+      <HeroEditorial />
     </div>
   )
 }
